@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6599824E27EA55020008EEF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599824D27EA55020008EEF1 /* AppDelegate.swift */; };
+		6599825027EA55020008EEF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599824F27EA55020008EEF1 /* GameViewController.swift */; };
+		6599825327EA55020008EEF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599825127EA55020008EEF1 /* Main.storyboard */; };
+		6599825627EA55020008EEF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599825427EA55020008EEF1 /* LaunchScreen.storyboard */; };
+		6599825E27EA55020008EEF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599825D27EA55020008EEF1 /* AppDelegate.swift */; };
+		6599826027EA55020008EEF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599825F27EA55020008EEF1 /* GameViewController.swift */; };
+		6599826327EA55020008EEF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599826127EA55020008EEF1 /* Main.storyboard */; };
+		6599826627EA55020008EEF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599826427EA55020008EEF1 /* LaunchScreen.storyboard */; };
+		6599826E27EA55020008EEF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599826D27EA55020008EEF1 /* AppDelegate.swift */; };
+		6599827027EA55020008EEF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599826F27EA55020008EEF1 /* GameViewController.swift */; };
+		6599827327EA55020008EEF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599827127EA55020008EEF1 /* Main.storyboard */; };
+		6599827527EA55020008EEF1 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599824327EA54FD0008EEF1 /* GameController.swift */; };
+		6599827627EA55020008EEF1 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599824327EA54FD0008EEF1 /* GameController.swift */; };
+		6599827727EA55020008EEF1 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599824327EA54FD0008EEF1 /* GameController.swift */; };
+		6599827827EA55020008EEF1 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824427EA54FD0008EEF1 /* Art.scnassets */; };
+		6599827927EA55020008EEF1 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824427EA54FD0008EEF1 /* Art.scnassets */; };
+		6599827A27EA55020008EEF1 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824427EA54FD0008EEF1 /* Art.scnassets */; };
+		6599827B27EA55020008EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824527EA55010008EEF1 /* Assets.xcassets */; };
+		6599827C27EA55020008EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824527EA55010008EEF1 /* Assets.xcassets */; };
+		6599827D27EA55020008EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824527EA55010008EEF1 /* Assets.xcassets */; };
+		6599828A27EA56E80008EEF1 /* Dodecahedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Dodecahedron.swift */; };
+		6599828B27EA56E80008EEF1 /* Dodecahedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Dodecahedron.swift */; };
+		6599828C27EA56E80008EEF1 /* Dodecahedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Dodecahedron.swift */; };
+		6599828E27EA57190008EEF1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828D27EA57190008EEF1 /* Geometry.swift */; };
+		6599828F27EA57190008EEF1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828D27EA57190008EEF1 /* Geometry.swift */; };
+		6599829027EA57190008EEF1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828D27EA57190008EEF1 /* Geometry.swift */; };
+		6599829227EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */; };
+		6599829327EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */; };
+		6599829427EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6599824327EA54FD0008EEF1 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		6599824427EA54FD0008EEF1 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
+		6599824527EA55010008EEF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6599824A27EA55020008EEF1 /* TestDodeca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDodeca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6599824D27EA55020008EEF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6599824F27EA55020008EEF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6599825227EA55020008EEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6599825527EA55020008EEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6599825B27EA55020008EEF1 /* TestDodeca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDodeca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6599825D27EA55020008EEF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6599825F27EA55020008EEF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6599826227EA55020008EEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6599826527EA55020008EEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6599826B27EA55020008EEF1 /* TestDodeca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDodeca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6599826D27EA55020008EEF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6599826F27EA55020008EEF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6599827227EA55020008EEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6599827427EA55020008EEF1 /* TestDodeca_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestDodeca_macOS.entitlements; sourceTree = "<group>"; };
+		6599828927EA56E80008EEF1 /* Dodecahedron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dodecahedron.swift; sourceTree = "<group>"; };
+		6599828D27EA57190008EEF1 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Utils.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6599824727EA55020008EEF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6599825827EA55020008EEF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6599826827EA55020008EEF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6599823D27EA54FD0008EEF1 = {
+			isa = PBXGroup;
+			children = (
+				6599824227EA54FD0008EEF1 /* TestDodeca Shared */,
+				6599824C27EA55020008EEF1 /* TestDodeca iOS */,
+				6599825C27EA55020008EEF1 /* TestDodeca tvOS */,
+				6599826C27EA55020008EEF1 /* TestDodeca macOS */,
+				6599824B27EA55020008EEF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6599824227EA54FD0008EEF1 /* TestDodeca Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6599824327EA54FD0008EEF1 /* GameController.swift */,
+				6599824427EA54FD0008EEF1 /* Art.scnassets */,
+				6599824527EA55010008EEF1 /* Assets.xcassets */,
+				6599828927EA56E80008EEF1 /* Dodecahedron.swift */,
+				6599828D27EA57190008EEF1 /* Geometry.swift */,
+				6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */,
+			);
+			path = "TestDodeca Shared";
+			sourceTree = "<group>";
+		};
+		6599824B27EA55020008EEF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6599824A27EA55020008EEF1 /* TestDodeca.app */,
+				6599825B27EA55020008EEF1 /* TestDodeca.app */,
+				6599826B27EA55020008EEF1 /* TestDodeca.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6599824C27EA55020008EEF1 /* TestDodeca iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6599824D27EA55020008EEF1 /* AppDelegate.swift */,
+				6599824F27EA55020008EEF1 /* GameViewController.swift */,
+				6599825127EA55020008EEF1 /* Main.storyboard */,
+				6599825427EA55020008EEF1 /* LaunchScreen.storyboard */,
+			);
+			path = "TestDodeca iOS";
+			sourceTree = "<group>";
+		};
+		6599825C27EA55020008EEF1 /* TestDodeca tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				6599825D27EA55020008EEF1 /* AppDelegate.swift */,
+				6599825F27EA55020008EEF1 /* GameViewController.swift */,
+				6599826127EA55020008EEF1 /* Main.storyboard */,
+				6599826427EA55020008EEF1 /* LaunchScreen.storyboard */,
+			);
+			path = "TestDodeca tvOS";
+			sourceTree = "<group>";
+		};
+		6599826C27EA55020008EEF1 /* TestDodeca macOS */ = {
+			isa = PBXGroup;
+			children = (
+				6599826D27EA55020008EEF1 /* AppDelegate.swift */,
+				6599826F27EA55020008EEF1 /* GameViewController.swift */,
+				6599827127EA55020008EEF1 /* Main.storyboard */,
+				6599827427EA55020008EEF1 /* TestDodeca_macOS.entitlements */,
+			);
+			path = "TestDodeca macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6599824927EA55020008EEF1 /* TestDodeca iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6599828027EA55020008EEF1 /* Build configuration list for PBXNativeTarget "TestDodeca iOS" */;
+			buildPhases = (
+				6599824627EA55020008EEF1 /* Sources */,
+				6599824727EA55020008EEF1 /* Frameworks */,
+				6599824827EA55020008EEF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestDodeca iOS";
+			productName = "TestDodeca iOS";
+			productReference = 6599824A27EA55020008EEF1 /* TestDodeca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6599825A27EA55020008EEF1 /* TestDodeca tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6599828327EA55020008EEF1 /* Build configuration list for PBXNativeTarget "TestDodeca tvOS" */;
+			buildPhases = (
+				6599825727EA55020008EEF1 /* Sources */,
+				6599825827EA55020008EEF1 /* Frameworks */,
+				6599825927EA55020008EEF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestDodeca tvOS";
+			productName = "TestDodeca tvOS";
+			productReference = 6599825B27EA55020008EEF1 /* TestDodeca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6599826A27EA55020008EEF1 /* TestDodeca macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6599828627EA55020008EEF1 /* Build configuration list for PBXNativeTarget "TestDodeca macOS" */;
+			buildPhases = (
+				6599826727EA55020008EEF1 /* Sources */,
+				6599826827EA55020008EEF1 /* Frameworks */,
+				6599826927EA55020008EEF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestDodeca macOS";
+			productName = "TestDodeca macOS";
+			productReference = 6599826B27EA55020008EEF1 /* TestDodeca.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6599823E27EA54FD0008EEF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6599824927EA55020008EEF1 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					6599825A27EA55020008EEF1 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					6599826A27EA55020008EEF1 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 6599824127EA54FD0008EEF1 /* Build configuration list for PBXProject "TestDodeca" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6599823D27EA54FD0008EEF1;
+			productRefGroup = 6599824B27EA55020008EEF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6599824927EA55020008EEF1 /* TestDodeca iOS */,
+				6599825A27EA55020008EEF1 /* TestDodeca tvOS */,
+				6599826A27EA55020008EEF1 /* TestDodeca macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6599824827EA55020008EEF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6599825327EA55020008EEF1 /* Main.storyboard in Resources */,
+				6599825627EA55020008EEF1 /* LaunchScreen.storyboard in Resources */,
+				6599827B27EA55020008EEF1 /* Assets.xcassets in Resources */,
+				6599827827EA55020008EEF1 /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6599825927EA55020008EEF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6599826327EA55020008EEF1 /* Main.storyboard in Resources */,
+				6599826627EA55020008EEF1 /* LaunchScreen.storyboard in Resources */,
+				6599827C27EA55020008EEF1 /* Assets.xcassets in Resources */,
+				6599827927EA55020008EEF1 /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6599826927EA55020008EEF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6599827327EA55020008EEF1 /* Main.storyboard in Resources */,
+				6599827D27EA55020008EEF1 /* Assets.xcassets in Resources */,
+				6599827A27EA55020008EEF1 /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6599824627EA55020008EEF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6599825027EA55020008EEF1 /* GameViewController.swift in Sources */,
+				6599829227EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */,
+				6599828A27EA56E80008EEF1 /* Dodecahedron.swift in Sources */,
+				6599827527EA55020008EEF1 /* GameController.swift in Sources */,
+				6599824E27EA55020008EEF1 /* AppDelegate.swift in Sources */,
+				6599828E27EA57190008EEF1 /* Geometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6599825727EA55020008EEF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6599826027EA55020008EEF1 /* GameViewController.swift in Sources */,
+				6599829327EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */,
+				6599828B27EA56E80008EEF1 /* Dodecahedron.swift in Sources */,
+				6599827627EA55020008EEF1 /* GameController.swift in Sources */,
+				6599825E27EA55020008EEF1 /* AppDelegate.swift in Sources */,
+				6599828F27EA57190008EEF1 /* Geometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6599826727EA55020008EEF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6599827027EA55020008EEF1 /* GameViewController.swift in Sources */,
+				6599829427EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */,
+				6599828C27EA56E80008EEF1 /* Dodecahedron.swift in Sources */,
+				6599827727EA55020008EEF1 /* GameController.swift in Sources */,
+				6599826E27EA55020008EEF1 /* AppDelegate.swift in Sources */,
+				6599829027EA57190008EEF1 /* Geometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6599825127EA55020008EEF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6599825227EA55020008EEF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6599825427EA55020008EEF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6599825527EA55020008EEF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6599826127EA55020008EEF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6599826227EA55020008EEF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6599826427EA55020008EEF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6599826527EA55020008EEF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6599827127EA55020008EEF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6599827227EA55020008EEF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6599827E27EA55020008EEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6599827F27EA55020008EEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6599828127EA55020008EEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK556GVW7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mendez.TestDodeca;
+				PRODUCT_NAME = TestDodeca;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6599828227EA55020008EEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK556GVW7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mendez.TestDodeca;
+				PRODUCT_NAME = TestDodeca;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6599828427EA55020008EEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK556GVW7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mendez.TestDodeca;
+				PRODUCT_NAME = TestDodeca;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		6599828527EA55020008EEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK556GVW7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mendez.TestDodeca;
+				PRODUCT_NAME = TestDodeca;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6599828727EA55020008EEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TestDodeca macOS/TestDodeca_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK556GVW7A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mendez.TestDodeca;
+				PRODUCT_NAME = TestDodeca;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6599828827EA55020008EEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TestDodeca macOS/TestDodeca_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK556GVW7A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mendez.TestDodeca;
+				PRODUCT_NAME = TestDodeca;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6599824127EA54FD0008EEF1 /* Build configuration list for PBXProject "TestDodeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6599827E27EA55020008EEF1 /* Debug */,
+				6599827F27EA55020008EEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6599828027EA55020008EEF1 /* Build configuration list for PBXNativeTarget "TestDodeca iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6599828127EA55020008EEF1 /* Debug */,
+				6599828227EA55020008EEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6599828327EA55020008EEF1 /* Build configuration list for PBXNativeTarget "TestDodeca tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6599828427EA55020008EEF1 /* Debug */,
+				6599828527EA55020008EEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6599828627EA55020008EEF1 /* Build configuration list for PBXNativeTarget "TestDodeca macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6599828727EA55020008EEF1 /* Debug */,
+				6599828827EA55020008EEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6599823E27EA54FD0008EEF1 /* Project object */;
+}
