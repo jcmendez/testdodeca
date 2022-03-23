@@ -27,15 +27,24 @@
 		6599827B27EA55020008EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824527EA55010008EEF1 /* Assets.xcassets */; };
 		6599827C27EA55020008EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824527EA55010008EEF1 /* Assets.xcassets */; };
 		6599827D27EA55020008EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6599824527EA55010008EEF1 /* Assets.xcassets */; };
-		6599828A27EA56E80008EEF1 /* Dodecahedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Dodecahedron.swift */; };
-		6599828B27EA56E80008EEF1 /* Dodecahedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Dodecahedron.swift */; };
-		6599828C27EA56E80008EEF1 /* Dodecahedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Dodecahedron.swift */; };
-		6599828E27EA57190008EEF1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828D27EA57190008EEF1 /* Geometry.swift */; };
-		6599828F27EA57190008EEF1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828D27EA57190008EEF1 /* Geometry.swift */; };
-		6599829027EA57190008EEF1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828D27EA57190008EEF1 /* Geometry.swift */; };
+		6599828A27EA56E80008EEF1 /* Polyhedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Polyhedron.swift */; };
+		6599828B27EA56E80008EEF1 /* Polyhedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Polyhedron.swift */; };
+		6599828C27EA56E80008EEF1 /* Polyhedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599828927EA56E80008EEF1 /* Polyhedron.swift */; };
 		6599829227EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */; };
 		6599829327EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */; };
 		6599829427EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */; };
+		6599829627EA66730008EEF1 /* PolyhedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829527EA66730008EEF1 /* PolyhedronDescriptor.swift */; };
+		6599829727EA66730008EEF1 /* PolyhedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829527EA66730008EEF1 /* PolyhedronDescriptor.swift */; };
+		6599829827EA66730008EEF1 /* PolyhedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829527EA66730008EEF1 /* PolyhedronDescriptor.swift */; };
+		6599829A27EA7A190008EEF1 /* IcosahedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829927EA7A190008EEF1 /* IcosahedronDescriptor.swift */; };
+		6599829B27EA7A190008EEF1 /* IcosahedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829927EA7A190008EEF1 /* IcosahedronDescriptor.swift */; };
+		6599829C27EA7A190008EEF1 /* IcosahedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829927EA7A190008EEF1 /* IcosahedronDescriptor.swift */; };
+		6599829E27EA7A520008EEF1 /* DodecahedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829D27EA7A520008EEF1 /* DodecahedronDescriptor.swift */; };
+		6599829F27EA7A520008EEF1 /* DodecahedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829D27EA7A520008EEF1 /* DodecahedronDescriptor.swift */; };
+		659982A027EA7A520008EEF1 /* DodecahedronDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599829D27EA7A520008EEF1 /* DodecahedronDescriptor.swift */; };
+		659982A227EB9EBF0008EEF1 /* SceneKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659982A127EB9EBF0008EEF1 /* SceneKitUtils.swift */; };
+		659982A327EB9EBF0008EEF1 /* SceneKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659982A127EB9EBF0008EEF1 /* SceneKitUtils.swift */; };
+		659982A427EB9EBF0008EEF1 /* SceneKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659982A127EB9EBF0008EEF1 /* SceneKitUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,9 +66,12 @@
 		6599826F27EA55020008EEF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6599827227EA55020008EEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6599827427EA55020008EEF1 /* TestDodeca_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestDodeca_macOS.entitlements; sourceTree = "<group>"; };
-		6599828927EA56E80008EEF1 /* Dodecahedron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dodecahedron.swift; sourceTree = "<group>"; };
-		6599828D27EA57190008EEF1 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		6599828927EA56E80008EEF1 /* Polyhedron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyhedron.swift; sourceTree = "<group>"; };
 		6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Utils.swift"; sourceTree = "<group>"; };
+		6599829527EA66730008EEF1 /* PolyhedronDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyhedronDescriptor.swift; sourceTree = "<group>"; };
+		6599829927EA7A190008EEF1 /* IcosahedronDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcosahedronDescriptor.swift; sourceTree = "<group>"; };
+		6599829D27EA7A520008EEF1 /* DodecahedronDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodecahedronDescriptor.swift; sourceTree = "<group>"; };
+		659982A127EB9EBF0008EEF1 /* SceneKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +113,15 @@
 		6599824227EA54FD0008EEF1 /* TestDodeca Shared */ = {
 			isa = PBXGroup;
 			children = (
-				6599824327EA54FD0008EEF1 /* GameController.swift */,
 				6599824427EA54FD0008EEF1 /* Art.scnassets */,
 				6599824527EA55010008EEF1 /* Assets.xcassets */,
-				6599828927EA56E80008EEF1 /* Dodecahedron.swift */,
-				6599828D27EA57190008EEF1 /* Geometry.swift */,
+				6599828927EA56E80008EEF1 /* Polyhedron.swift */,
+				6599824327EA54FD0008EEF1 /* GameController.swift */,
 				6599829127EA59B60008EEF1 /* SCNVector3+Utils.swift */,
+				6599829527EA66730008EEF1 /* PolyhedronDescriptor.swift */,
+				6599829927EA7A190008EEF1 /* IcosahedronDescriptor.swift */,
+				6599829D27EA7A520008EEF1 /* DodecahedronDescriptor.swift */,
+				659982A127EB9EBF0008EEF1 /* SceneKitUtils.swift */,
 			);
 			path = "TestDodeca Shared";
 			sourceTree = "<group>";
@@ -289,12 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659982A227EB9EBF0008EEF1 /* SceneKitUtils.swift in Sources */,
 				6599825027EA55020008EEF1 /* GameViewController.swift in Sources */,
 				6599829227EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */,
-				6599828A27EA56E80008EEF1 /* Dodecahedron.swift in Sources */,
+				6599829E27EA7A520008EEF1 /* DodecahedronDescriptor.swift in Sources */,
+				6599828A27EA56E80008EEF1 /* Polyhedron.swift in Sources */,
+				6599829627EA66730008EEF1 /* PolyhedronDescriptor.swift in Sources */,
+				6599829A27EA7A190008EEF1 /* IcosahedronDescriptor.swift in Sources */,
 				6599827527EA55020008EEF1 /* GameController.swift in Sources */,
 				6599824E27EA55020008EEF1 /* AppDelegate.swift in Sources */,
-				6599828E27EA57190008EEF1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659982A327EB9EBF0008EEF1 /* SceneKitUtils.swift in Sources */,
 				6599826027EA55020008EEF1 /* GameViewController.swift in Sources */,
 				6599829327EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */,
-				6599828B27EA56E80008EEF1 /* Dodecahedron.swift in Sources */,
+				6599829F27EA7A520008EEF1 /* DodecahedronDescriptor.swift in Sources */,
+				6599828B27EA56E80008EEF1 /* Polyhedron.swift in Sources */,
+				6599829727EA66730008EEF1 /* PolyhedronDescriptor.swift in Sources */,
+				6599829B27EA7A190008EEF1 /* IcosahedronDescriptor.swift in Sources */,
 				6599827627EA55020008EEF1 /* GameController.swift in Sources */,
 				6599825E27EA55020008EEF1 /* AppDelegate.swift in Sources */,
-				6599828F27EA57190008EEF1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659982A427EB9EBF0008EEF1 /* SceneKitUtils.swift in Sources */,
 				6599827027EA55020008EEF1 /* GameViewController.swift in Sources */,
 				6599829427EA59B60008EEF1 /* SCNVector3+Utils.swift in Sources */,
-				6599828C27EA56E80008EEF1 /* Dodecahedron.swift in Sources */,
+				659982A027EA7A520008EEF1 /* DodecahedronDescriptor.swift in Sources */,
+				6599828C27EA56E80008EEF1 /* Polyhedron.swift in Sources */,
+				6599829827EA66730008EEF1 /* PolyhedronDescriptor.swift in Sources */,
+				6599829C27EA7A190008EEF1 /* IcosahedronDescriptor.swift in Sources */,
 				6599827727EA55020008EEF1 /* GameController.swift in Sources */,
 				6599826E27EA55020008EEF1 /* AppDelegate.swift in Sources */,
-				6599829027EA57190008EEF1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
