@@ -31,7 +31,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
     let icosa = Polyhedron(descriptor: IcosahedronDescriptor(),showWireframes: true, showFaces: true)
     let icosaNode = icosa.node
 
-    let dodeca = Polyhedron(descriptor: DodecahedronDescriptor(),showVertices: true)
+    let dodeca = Polyhedron(descriptor: DodecahedronDescriptor(),showWireframes: false)
     let dodecaNode = dodeca.node
     
     scene.rootNode.addChildNode(dodecaNode)
@@ -47,37 +47,45 @@ class GameController: NSObject, SCNSceneRendererDelegate {
   
   func highlightNodes(atPoint point: CGPoint) {
     let hitResults = self.sceneRenderer.hitTest(point, options: [:])
-    for result in hitResults {
+    guard let result = hitResults.first(where: { $0.node.name?.starts(with: "face") ?? false }) else { return }
       
-      if let name = result.node.name {
-        print("Hit \(name)")
-      }
-      
-      // get its material
-      guard let material = result.node.geometry?.firstMaterial else {
-        return
-      }
-      
-      let oldEmissionContents = material.emission.contents
-      
-      // highlight it
+    if let name = result.node.name {
+      print("Hit \(name)")
+    }
+    
+    // get its material
+    guard let material = result.node.geometry?.firstMaterial else {
+      return
+    }
+    
+    let oldEmissionContents = material.emission.contents
+    
+    // highlight it
+    SCNTransaction.begin()
+    SCNTransaction.animationDuration = 0.5
+    
+    // on completion - unhighlight
+    SCNTransaction.completionBlock = {
       SCNTransaction.begin()
       SCNTransaction.animationDuration = 0.5
       
-      // on completion - unhighlight
       SCNTransaction.completionBlock = {
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        
+
         material.emission.contents = oldEmissionContents
+        material.transparency = 1.0
         
         SCNTransaction.commit()
       }
       
       material.emission.contents = SCNColor.red
-      
       SCNTransaction.commit()
     }
+    
+    material.transparency = 0.35
+    
+    SCNTransaction.commit()
   }
   
   func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {

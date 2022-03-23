@@ -36,7 +36,7 @@ class Polyhedron {
       if let m = g.materials.first {
         m.isDoubleSided = true
         let c = SCNColor.random
-        m.emission.contents = c
+        m.diffuse.contents = c
       }
       return g
     }
