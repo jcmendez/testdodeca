@@ -12,84 +12,51 @@ import WatchKit
 #endif
 
 class GameController: NSObject, SCNSceneRendererDelegate {
-  
+
   let scene: SCNScene
   let sceneRenderer: SCNSceneRenderer
-  
+  let dodeca = Polyhedron(descriptor: DodecahedronDescriptor(), showWireframes: false, showNormals: true)
+
   init(sceneRenderer renderer: SCNSceneRenderer) {
     sceneRenderer = renderer
-    scene = SCNScene(named: "Art.scnassets/ship.scn")!
-    
-    super.init()
-    
-    sceneRenderer.delegate = self
-    
-    if let ship = scene.rootNode.childNode(withName: "ship", recursively: true) {
-      ship.removeFromParentNode()
-    }
-    
-    let icosa = Polyhedron(descriptor: IcosahedronDescriptor(),showWireframes: true, showFaces: true)
-    let icosaNode = icosa.node
+    scene = SCNScene()
 
-    let dodeca = Polyhedron(descriptor: DodecahedronDescriptor(),showWireframes: false)
+    super.init()
+
+    sceneRenderer.delegate = self
     let dodecaNode = dodeca.node
-    
+    dodecaNode.name = "dodeca"
+
     scene.rootNode.addChildNode(dodecaNode)
-    scene.rootNode.addChildNode(icosaNode)
-    
-    icosaNode.localTranslate(by: SCNVector3(-2,0,0))
-    icosaNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: -0.01, y: -0.2, z: -0.01, duration: 1)))
-    
-    dodecaNode.localTranslate(by: SCNVector3(2,0,0))
-    dodecaNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0.01, y: 0.2, z: 0.01, duration: 1)))
     sceneRenderer.scene = scene
+  }
+
+  func rotateNodeTo(x: CGFloat, y: CGFloat) {
+    if let dodecaNode = scene.rootNode.childNode(withName: "dodeca", recursively: false) {
+      dodecaNode.transform = SCNMatrix4Mult(SCNMatrix4MakeRotation(Float(x), 1, 0, 0), SCNMatrix4MakeRotation(Float(y), 0, 1, 0))
+    }
   }
   
   func highlightNodes(atPoint point: CGPoint) {
+
     let hitResults = self.sceneRenderer.hitTest(point, options: [:])
     guard let result = hitResults.first(where: { $0.node.name?.starts(with: "face") ?? false }) else { return }
-      
+
     if let name = result.node.name {
       print("Hit \(name)")
-    }
-    
-    // get its material
-    guard let material = result.node.geometry?.firstMaterial else {
-      return
-    }
-    
-    let oldEmissionContents = material.emission.contents
-    
-    // highlight it
-    SCNTransaction.begin()
-    SCNTransaction.animationDuration = 0.5
-    
-    // on completion - unhighlight
-    SCNTransaction.completionBlock = {
-      SCNTransaction.begin()
-      SCNTransaction.animationDuration = 0.5
-      
-      SCNTransaction.completionBlock = {
-        SCNTransaction.begin()
-        SCNTransaction.animationDuration = 0.5
-
-        material.emission.contents = oldEmissionContents
-        material.transparency = 1.0
-        
-        SCNTransaction.commit()
+      print(result.node.worldOrientation, result.node.eulerAngles)
+      if let faceIndex = Int(name.dropFirst(5)), let dodecaNode = result.node.parent {
+        dodecaNode.removeAllActions()
+        let v = dodeca.normalVectors[faceIndex]
+        print(faceIndex, v)
+//        let randOrient = SCNVector4(CGFloat.random(in: 0..<3.14159), CGFloat.random(in: 0..<3.14159), CGFloat.random(in: 0..<3.14159), CGFloat.random(in: 0..<3.14159))
+        dodecaNode.runAction(SCNAction.rotateTo(x: CGFloat(-v.x), y: CGFloat(-v.y), z: CGFloat(-v.z), duration: 2))
       }
-      
-      material.emission.contents = SCNColor.red
-      SCNTransaction.commit()
     }
-    
-    material.transparency = 0.35
-    
-    SCNTransaction.commit()
   }
-  
+
   func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
     // Called before each frame is rendered
   }
-  
+
 }

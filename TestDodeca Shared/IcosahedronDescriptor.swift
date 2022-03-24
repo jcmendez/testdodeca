@@ -8,43 +8,26 @@
 import Foundation
 import SceneKit
 
-private let t = (1.0 + sqrt(5.0)) / 2.0;
+private let t = (1.0 + sqrt(5.0)) / 2.0
 
 struct IcosahedronDescriptor: PolyhedronDescriptor {
   let vertices = [
-    SCNVector3(-1,  t, 0).normalized(),
-    SCNVector3( 1,  t, 0).normalized(),
+    SCNVector3(-1, t, 0).normalized(),
+    SCNVector3( 1, t, 0).normalized(),
     SCNVector3(-1, -t, 0).normalized(),
     SCNVector3( 1, -t, 0).normalized(),
-    
-    SCNVector3(0, -1,  t).normalized(),
-    SCNVector3(0,  1,  t).normalized(),
+
+    SCNVector3(0, -1, t).normalized(),
+    SCNVector3(0, 1, t).normalized(),
     SCNVector3(0, -1, -t).normalized(),
-    SCNVector3(0,  1, -t).normalized(),
-    
-    SCNVector3( t,  0, -1).normalized(),
-    SCNVector3( t,  0,  1).normalized(),
-    SCNVector3(-t,  0, -1).normalized(),
-    SCNVector3(-t,  0,  1).normalized()
+    SCNVector3(0, 1, -t).normalized(),
+
+    SCNVector3( t, 0, -1).normalized(),
+    SCNVector3( t, 0, 1).normalized(),
+    SCNVector3(-t, 0, -1).normalized(),
+    SCNVector3(-t, 0, 1).normalized()
   ]
-  
-  let planeIndices: [Int8] = [
-    7, 5,
-    5, 4,
-    4, 6,
-    6, 7,
-    
-    0, 1,
-    1, 3,
-    3, 2,
-    2, 0,
-    
-    10, 11,
-    11, 9,
-    9, 8,
-    8, 10
-  ]
-  
+
   let faces: [[Int8]] = [
     [0, 11, 5],
     [0, 5, 1],
@@ -67,7 +50,7 @@ struct IcosahedronDescriptor: PolyhedronDescriptor {
     [8, 6, 7],
     [9, 8, 1]
   ]
-  
+
   let wireframeIndices: [Int8] = [
     0, 5,
     1, 0,

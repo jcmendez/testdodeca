@@ -9,8 +9,7 @@ import Foundation
 import SceneKit
 
 protocol PolyhedronDescriptor {
-  var vertices:[SCNVector3] { get }
-  var faces:[[Int8]] { get }
-  var planeIndices:[Int8] { get }
-  var wireframeIndices:[Int8] { get }
+  var vertices: [SCNVector3] { get }
+  var faces: [[Int8]] { get }
+  var wireframeIndices: [Int8] { get }
 }

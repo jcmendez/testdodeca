@@ -8,54 +8,50 @@
 import Foundation
 import SceneKit
 
-private let t = (1.0 + sqrt(5.0)) / 2.0;
+private let t = (1.0 + sqrt(5.0)) / 2.0
 
 struct DodecahedronDescriptor: PolyhedronDescriptor {
   let vertices = [
     SCNVector3(-1, -1, -1).normalized(), // 0
     SCNVector3( 1, -1, -1).normalized(), // 1
-    SCNVector3(-1,  1, -1).normalized(), // 2
-    SCNVector3( 1,  1, -1).normalized(), // 3
-    SCNVector3(-1, -1,  1).normalized(), // 4
-    SCNVector3( 1, -1,  1).normalized(), // 5
-    SCNVector3(-1,  1,  1).normalized(), // 6
-    SCNVector3( 1,  1,  1).normalized(), // 7
-    
-    SCNVector3( 0,  t, -1/t).normalized(), // 8
+    SCNVector3(-1, 1, -1).normalized(), // 2
+    SCNVector3( 1, 1, -1).normalized(), // 3
+    SCNVector3(-1, -1, 1).normalized(), // 4
+    SCNVector3( 1, -1, 1).normalized(), // 5
+    SCNVector3(-1, 1, 1).normalized(), // 6
+    SCNVector3( 1, 1, 1).normalized(), // 7
+
+    SCNVector3( 0, t, -1/t).normalized(), // 8
     SCNVector3( 0, -t, -1/t).normalized(), // 9
-    SCNVector3( 0,  t,  1/t).normalized(), // 10
-    SCNVector3( 0, -t,  1/t).normalized(), // 11
-    
-    SCNVector3(-1/t, 0,  t).normalized(), // 12
+    SCNVector3( 0, t, 1/t).normalized(), // 10
+    SCNVector3( 0, -t, 1/t).normalized(), // 11
+
+    SCNVector3(-1/t, 0, t).normalized(), // 12
     SCNVector3(-1/t, 0, -t).normalized(), // 13
-    SCNVector3( 1/t, 0,  t).normalized(), // 14
+    SCNVector3( 1/t, 0, t).normalized(), // 14
     SCNVector3( 1/t, 0, -t).normalized(), // 15
-    
+
     SCNVector3( t, -1/t, 0).normalized(), // 16
     SCNVector3(-t, -1/t, 0).normalized(), // 17
-    SCNVector3( t,  1/t, 0).normalized(), // 18
-    SCNVector3(-t,  1/t, 0).normalized()  // 19
+    SCNVector3( t, 1/t, 0).normalized(), // 18
+    SCNVector3(-t, 1/t, 0).normalized()  // 19
   ]
-  
+
   let faces: [[Int8]] = [
-    [1,9,11,5,16],
-    [1,15,13,0,9],
-    [9,0,17,4,11],
-    [11,4,12,14,5],
-    [5,14,7,18,16],
-    [16,18,3,15,1],
-    [0,13,2,19,17],
-    [15,3,8,2,13],
-    [18,7,10,8,3],
-    [14,12,6,10,7],
-    [4,17,19,6,12],
-    [10,8,2,19,6]
+    [1, 9, 11, 5, 16],
+    [1, 15, 13, 0, 9],
+    [9, 0, 17, 4, 11],
+    [11, 4, 12, 14, 5],
+    [5, 14, 7, 18, 16],
+    [16, 18, 3, 15, 1],
+    [0, 13, 2, 19, 17],
+    [15, 3, 8, 2, 13],
+    [18, 7, 10, 8, 3],
+    [14, 12, 6, 10, 7],
+    [4, 17, 19, 6, 12],
+    [10, 8, 2, 19, 6]
   ]
-  
-  let planeIndices: [Int8] = [
-    
-  ]
-  
+
   let wireframeIndices: [Int8] = [
     0, 9,
     0, 13,
@@ -88,7 +84,7 @@ struct DodecahedronDescriptor: PolyhedronDescriptor {
     16, 18,
     17, 19
   ]
-  
+
   /**
    * This is a way to calculate the arrays of indices
    init() {
