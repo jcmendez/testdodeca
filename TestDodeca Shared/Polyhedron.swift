@@ -52,6 +52,12 @@ class Polyhedron {
     }
   }()
   
+  lazy var quaternionsForRotation: [simd_quatd] = {
+    let top = SIMD3<Double>(0, 0, 1)
+    return normalVectors.map { simd_quatd(from: SIMD3($0), to: top)
+    }
+  }()
+  
   lazy var normalVectorGeometryArray: [SCNGeometry] = {
     let center = SCNVector3(0, 0, 0)
     return normalVectors.map { vector in
@@ -89,6 +95,7 @@ class Polyhedron {
         n.addChildNode(node)
         let text = String(i)
         let vNode = SCNNode(geometry: SCNText(string: text, extrusionDepth: 0.01))
+        print("\(i), \(normalVectors[i])")
         vNode.localTranslate(by: normalVectors[i])
         vNode.scale = SCNVector3(textScale, textScale, textScale)
         n.addChildNode(vNode)

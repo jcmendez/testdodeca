@@ -33,7 +33,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
 
   func rotateNodeTo(x: CGFloat, y: CGFloat) {
     if let dodecaNode = scene.rootNode.childNode(withName: "dodeca", recursively: false) {
-      dodecaNode.transform = SCNMatrix4Mult(SCNMatrix4MakeRotation(Float(x), 1, 0, 0), SCNMatrix4MakeRotation(Float(y), 0, 1, 0))
+      dodecaNode.transform = SCNMatrix4Mult(SCNMatrix4MakeRotation(SCNFloat(x), 1, 0, 0), SCNMatrix4MakeRotation(SCNFloat(y), 0, 1, 0))
     }
   }
   
@@ -47,10 +47,12 @@ class GameController: NSObject, SCNSceneRendererDelegate {
       print(result.node.worldOrientation, result.node.eulerAngles)
       if let faceIndex = Int(name.dropFirst(5)), let dodecaNode = result.node.parent {
         dodecaNode.removeAllActions()
-        let v = dodeca.normalVectors[faceIndex]
-        print(faceIndex, v)
-//        let randOrient = SCNVector4(CGFloat.random(in: 0..<3.14159), CGFloat.random(in: 0..<3.14159), CGFloat.random(in: 0..<3.14159), CGFloat.random(in: 0..<3.14159))
-        dodecaNode.runAction(SCNAction.rotateTo(x: CGFloat(-v.x), y: CGFloat(-v.y), z: CGFloat(-v.z), duration: 2))
+        let rotationQuaternion = SCNQuaternion( dodeca.quaternionsForRotation[faceIndex].vector)
+        print(faceIndex, rotationQuaternion)
+        SCNTransaction.animationDuration = 2.0
+        SCNTransaction.begin()
+        dodecaNode.orientation = rotationQuaternion
+        SCNTransaction.commit()
       }
     }
   }
