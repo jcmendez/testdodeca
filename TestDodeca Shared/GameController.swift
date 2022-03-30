@@ -30,6 +30,10 @@ class GameController: NSObject, SCNSceneRendererDelegate {
     scene.rootNode.addChildNode(dodecaNode)
     sceneRenderer.scene = scene
   }
+  
+  func printNormalVectors() {
+    print("[",dodeca.normalVectors.map{String(format:"(%.6f, %.6f, %.6f)", $0.x, $0.y, $0.z)}.joined(separator: ",\n"),"]")
+  }
 
   func rotateNodeTo(x: CGFloat, y: CGFloat) {
     if let dodecaNode = scene.rootNode.childNode(withName: "dodeca", recursively: false) {
@@ -44,7 +48,6 @@ class GameController: NSObject, SCNSceneRendererDelegate {
 
     if let name = result.node.name {
       print("Hit \(name)")
-      print(result.node.worldOrientation, result.node.eulerAngles)
       if let faceIndex = Int(name.dropFirst(5)), let dodecaNode = result.node.parent {
         dodecaNode.removeAllActions()
         let rotationQuaternion = SCNQuaternion( dodeca.quaternionsForRotation[faceIndex].vector)

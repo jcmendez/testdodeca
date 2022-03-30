@@ -41,6 +41,7 @@ class GameViewController: UIViewController {
     let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
     gestureRecognizers.insert(panGesture, at: 1)
     self.gameView.gestureRecognizers = gestureRecognizers
+    gameController.printNormalVectors()
   }
 
   @objc

@@ -95,7 +95,6 @@ class Polyhedron {
         n.addChildNode(node)
         let text = String(i)
         let vNode = SCNNode(geometry: SCNText(string: text, extrusionDepth: 0.01))
-        print("\(i), \(normalVectors[i])")
         vNode.localTranslate(by: normalVectors[i])
         vNode.scale = SCNVector3(textScale, textScale, textScale)
         n.addChildNode(vNode)
