@@ -49,7 +49,7 @@ struct DodecahedronDescriptor: PolyhedronDescriptor {
     [18, 7, 10, 8, 3],
     [14, 12, 6, 10, 7],
     [4, 17, 19, 6, 12],
-    [10, 8, 2, 19, 6]
+    [10, 6, 19, 2, 8]
   ]
 
   let wireframeIndices: [Int8] = [
