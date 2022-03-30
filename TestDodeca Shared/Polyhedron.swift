@@ -31,12 +31,12 @@ class Polyhedron {
   }()
 
   lazy var faceGeometryArray: [SCNGeometry] = {
-    return descriptor.faces.map { faceIndices in
+    return descriptor.faces.enumerated().map { (i,faceIndices) in
       let t = polygonIndexesToTriangles(arr: faceIndices)
       let g = createGeometry(vertices: descriptor.vertices, indices: t, primitiveType: .triangles)
       if let m = g.materials.first {
         m.isDoubleSided = true
-        let c = SCNColor.random
+        let c = SCNColor.chartColors[i]
         m.diffuse.contents = c
       }
       return g

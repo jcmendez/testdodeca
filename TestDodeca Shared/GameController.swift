@@ -33,7 +33,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
 
   func rotateNodeTo(x: CGFloat, y: CGFloat) {
     if let dodecaNode = scene.rootNode.childNode(withName: "dodeca", recursively: false) {
-      dodecaNode.transform = SCNMatrix4Mult(SCNMatrix4MakeRotation(SCNFloat(x), 1, 0, 0), SCNMatrix4MakeRotation(SCNFloat(y), 0, 1, 0))
+      dodecaNode.transform = SCNMatrix4Mult(SCNMatrix4MakeRotation(SCNFloat(y), 1, 0, 0), SCNMatrix4MakeRotation(SCNFloat(x), 0, 1, 0))
     }
   }
   
